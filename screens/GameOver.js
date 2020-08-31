@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View, Button, Image } from 'react-native'
 
 const GameOver = (props) => {
 
@@ -8,6 +8,9 @@ const GameOver = (props) => {
             <Text>GAME OVER! YAY</Text>
             <Text>Number of rounds:{props.roundsNumber}</Text>
             <Text>Number was:{props.userNumber}</Text>
+            {/* <Image
+                source={}
+            /> */}
             <Button title="New Game" onPress={props.onRestart} />
         </View>
     )
